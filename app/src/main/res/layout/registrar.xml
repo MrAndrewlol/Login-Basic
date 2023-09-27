@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".registraractivity"
     android:background="@color/lightblue">
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -34,7 +36,7 @@
         android:layout_width="131dp"
         android:layout_height="38dp"
         android:layout_marginTop="32dp"
-        android:text="Usuario"
+        android:text="Correo"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +48,8 @@
         android:layout_width="356dp"
         android:layout_height="59dp"
         android:ems="10"
-        android:hint="Ingrese un usuario"
+        android:hint="Ingrese un correo"
+        android:maxLength="36"
         android:inputType="text"
         android:text=""
         android:textAlignment="center"
@@ -77,6 +80,7 @@
         android:hint="Ingrese una contraseña"
         android:inputType="textPassword"
         android:textAlignment="center"
+        android:maxLength="30"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -101,10 +105,12 @@
         android:layout_height="55dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+
         android:hint="Ingrese nuevamente su contraseña"
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textSize="22sp"
+        android:maxLength="30"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,4 +125,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
